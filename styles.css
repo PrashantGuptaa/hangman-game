@@ -1,0 +1,94 @@
+.heading {
+  /* text-align: center; */
+  font-size: 26px;
+  font-weight: 600;
+  height: 50px;
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  margin: 0;
+}
+
+.complete-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+
+  box-shadow: 2px 2px 3px 0 rgb(0, 68, 128);
+  transition: 0.3s;
+
+  background: #f09819; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 3px 2px 3px 0 darkred;
+}
+
+.word-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 5px;
+  color: white;
+  box-shadow: 3px 3px 5px 0 darkblue;
+
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
