@@ -15,7 +15,8 @@ const wordCollection = [
 let selectedWord = null,
   livesLeft = 5;
 
-  const ENABLED = "enabled", DISABLED = "disabled";
+const ENABLED = "enabled",
+  DISABLED = "disabled";
 
 (function () {
   const keyboardContainerElem = document.getElementById("keyboard-container");
@@ -57,7 +58,7 @@ function handleClick(e) {
   if (!letterExists) {
     document.getElementById("lives").innerHTML = --livesLeft;
   }
-  if(livesLeft <= 0) {
+  if (livesLeft <= 0) {
     updateCompleteKeyboard(true);
   }
   updateKey(e.target.id, true);
@@ -75,17 +76,16 @@ function updateKey(id, operation) {
 }
 
 function handleRestart() {
-    updateCompleteKeyboard(false);
-    livesLeft = 5;
-    document.getElementById('lives').innerHTML = livesLeft;
-    removeElements();
-    selectWordRandomly();
+  updateCompleteKeyboard(false);
+  livesLeft = 5;
+  document.getElementById("lives").innerHTML = livesLeft;
+  removeElements();
+  selectWordRandomly();
 }
 function removeElements() {
-    const wordContainerElem = document.getElementById("word-container");
-    const boxesElem = document.getElementsByClassName('box'); // return []
-    while (boxesElem.length > 0) {
-        wordContainerElem.removeChild(boxesElem[boxesElem.length - 1]);
-    }
+  const wordContainerElem = document.getElementById("word-container");
+  const boxesElem = document.getElementsByClassName("box"); // return []
+  while (boxesElem.length > 0) {
+    wordContainerElem.removeChild(boxesElem[boxesElem.length - 1]);
+  }
 }
-
