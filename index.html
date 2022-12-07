@@ -9,8 +9,22 @@
   </head>
   <body>
     <div class="heading complete-center">The Hangman Game</div>
-    <div class="word-container" id="word-container"></div>
-    <div class="keyboard-container" id="keyboard-container"></div>
+    <div class="wordly">
+        <div class="word-container" id="word-container"></div>
+    </div>
+    <div class="container">
+
+        <div class="keyboard-container" id="keyboard-container"></div>
+
+
+    </div>
+    <div class="lives-container" id="lives-container">
+        Lives Left: <span id="lives"></span>
+    </div>
+    <div  class="complete-center">
+        <button onclick="handleRestart()" class="restart">Restart</button>
+    </div>
+        
     <script src="./script.js"></script>
   </body>
 </html>
